@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import * as styles from './App.module.css';
+
+import {
+    FiAperture,
+    FiArrowUpCircle,
+    FiBluetooth,
+    FiCoffee,
+} from 'react-icons/fi';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <aside>
+                <FiAperture />
+                <FiArrowUpCircle />
+                <FiBluetooth />
+                <FiCoffee />
+            </aside>
+            <main className={styles.main} />
+        </>
+    );
 }
 
 export default App;
